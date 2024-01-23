@@ -121,7 +121,7 @@ function App() {
                 
               </article>
               </div>
-              <button class="button-85" role="button">Market Cnpap</button>
+              <button class="button-85" >Market Cnpap</button>
             
           </div>
         </div>
@@ -155,7 +155,7 @@ function App() {
                 <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                     <div className="font-bold text-[16px]">Community</div>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <a href="#"></a>
+                        
                         
                         <span className="text-[15px] ml-[6px]" >Youtube</span>    
                     </p>
