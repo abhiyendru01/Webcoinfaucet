@@ -118,8 +118,11 @@ function App() {
                 <div className="panel-block">
                   <p>transaction data</p>
                 </div>
+                
               </article>
-            </div>
+              </div>
+              <button class="button-85" role="button">Market Cap</button>
+            
           </div>
         </div>
       </section>
