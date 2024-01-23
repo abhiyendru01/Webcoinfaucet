@@ -1,3 +1,1 @@
-# Starter code for Faucet dApp tutorial
-
-Boilerplate code consisting of a new create-react-app project and some basic HTML and CSS.
+cryptocurrency website made by clueless coders for EXECUTE 3.0 Hackathon
