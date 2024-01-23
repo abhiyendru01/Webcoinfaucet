@@ -121,7 +121,7 @@ function App() {
                 
               </article>
               </div>
-              <button class="button-85" role="button">Market Cap</button>
+              <button class="button-85" role="button">Market Cnpap</button>
             
           </div>
         </div>
@@ -141,10 +141,9 @@ function App() {
         </div>
   
         <div className="boxx" onClick={() => boxClick(3)}>
-          <a href="#">
             <img src="src/images/github.svg" alt="" />
             <p>Github</p>
-          </a>
+          
           
         </div>
       </div>
