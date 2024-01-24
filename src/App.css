@@ -6,6 +6,7 @@ body {
 }
 
 .title {
+
   color: white;
   margin-bottom: 1 rem;
 }
@@ -155,6 +156,56 @@ body {
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
 }
+.connect-w {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  padding-top: 10px;
+  top: 7px ;
+  color: var(--glow-color);
+  font-size: 12.5px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 2em 0em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  }
+
+.connect-w::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.connect-w:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.connect-w:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
 .containerr {
   display: flex;
   padding: 10px;
@@ -178,7 +229,7 @@ body {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  background-color: var(--btn-color);
+  background-color: #57409b7e;
   border-radius: 1em;
   outline: none;
   box-shadow: 0 0 1em .25em var(--glow-color),
@@ -188,6 +239,7 @@ body {
   position: relative;
   transition: all 0.3s;
   font-size: large;
+  bottom: 20px;
 }
 .boxx:hover{
   color: #dcceee;
@@ -209,6 +261,14 @@ body {
   display: flex;
   max-width: 100%;
   max-height: 100%;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire box */
+  height: 100%; /* Cover the entire box */
+  object-fit: cover; /* Maintain aspect ratio and cover the box */
 }
 .alt{
   color:#c5b2f9;

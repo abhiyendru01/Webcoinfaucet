@@ -77,7 +77,7 @@ function App() {
           <div id="navbarMenu" className="navbar-menu">
             <div className="navbar-end is-align-items-center">
               <button
-                className="button-40"
+                className="connect-w"
                 onClick={connectWallet}
               >
                 <span className="is-link has-text-weight-bold">
@@ -97,7 +97,7 @@ function App() {
         <div className="faucet-hero-body">
           <div className="container has-text-centered main-content">
             <h1 className="title is-1">Webcoin Token</h1>
-            <p>Fast and reliable. 50 OCT/day.</p>
+            <p>Fast and reliable. 50 WCT/day.</p>
             <div className="box address-box">
               <div className="columns">
                 <div className="column is-four-fifths">
@@ -135,14 +135,14 @@ function App() {
             </div>
         <div className="boxx" >
           <a href="https://discord.com/api/oauth2/authorize?client_id=1199456588096864378&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A1500%2Fapi%2Fauth%2Fdiscord%2Fredirect&scope=identify+guilds+gdm.join+email+guilds.join+connections">
-          <image src="./public/discord.png" alt="" />
+          <img src="./public/discord.png" alt="" />
           <p>Discord</p>
           </a>
         </div>
   
         <div className="boxx" >
-          <a href="">
-          <img src="src/images/twitter.svg" alt="" />
+          <a href="#">
+          <img src="src/images/twitter.svg" alt=""  className="image-overlay"/>
           <p>Twitter</p></a>
         </div>
   
