@@ -121,7 +121,7 @@ function App() {
                 
               </article>
               </div>
-              <button class="button-85" >Market Cnpap</button>
+              <button class="button-85" >Market Cap</button>
             
           </div>
         </div>
