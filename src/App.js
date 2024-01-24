@@ -12,7 +12,7 @@ function App() {
   const connectWallet = async () => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
       try {
-        /* MetaMask is installed */
+        
         const accounts = await window.ethereum.request({
           method: "eth_requestAccounts",
         });
@@ -121,31 +121,31 @@ function App() {
                 
               </article>
               </div>
-              <button class="button-85" >Market Cap</button>
+              <button class="button-85">Market Cap</button>
             
           </div>
         </div>
       </section>
       
       <div className="containerr">
+      <div className="boxx" >
+        <a href="#">
+            <img src="src/images/github.svg" alt="" />
+            <p>SWAP WCT</p></a>
+            </div>
         <div className="boxx" >
           <a href="https://discord.com/api/oauth2/authorize?client_id=1199456588096864378&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A1500%2Fapi%2Fauth%2Fdiscord%2Fredirect&scope=identify+guilds+gdm.join+email+guilds.join+connections">
-          <image src="public/discord.png" alt="" />
+          <image src="./public/discord.png" alt="" />
           <p>Discord</p>
           </a>
         </div>
   
-        <div className="boxx" onClick={() => boxClick(2)}>
+        <div className="boxx" >
+          <a href="">
           <img src="src/images/twitter.svg" alt="" />
-          <p>Twitter</p>
+          <p>Twitter</p></a>
         </div>
   
-        <div className="boxx" onClick={() => boxClick(3)}>
-            <img src="src/images/github.svg" alt="" />
-            <p>Github</p>
-          
-          
-        </div>
       </div>
     <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
         <div className="w-full flex flex-col items-center justify-center m-auto">

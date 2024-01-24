@@ -187,6 +187,7 @@ body {
   text-shadow: 0 0 .5em var(--glow-color);
   position: relative;
   transition: all 0.3s;
+  font-size: large;
 }
 .boxx:hover{
   color: #dcceee;
@@ -195,16 +196,15 @@ body {
         
         inset 0 0 .75em .25em var(--glow-color);
 }
-.box a {
+.boxx a {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   text-decoration: none;
-  color: var(--glow-color);
+  color: var(--enhanced-glow-color);
 }
-
-.box img {
+.boxx img {
   align-items: center;
   display: flex;
   max-width: 100%;
