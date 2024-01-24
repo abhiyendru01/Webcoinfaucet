@@ -339,15 +339,68 @@ body {
   height: 100%;
   color: var(--glow-color);
   background: #13092f;
+  background: #110927dc;
   left: 0;
   top: 0;
   border-radius: 10px;
 }
-a{
-  color: #c5b2f9;
+
+.button-41 {
+  padding: 40px 30px;
+  text-align: center;
+  top: 2px;
+  bottom: 50px;
+  width: 500px;
+  border: 0;
+  font-size: 20px;
+  transition: all 150ms ease-in-out;
+margin: 50px;
+  border-radius: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+  background-image: radial-gradient(50% 115% at 50% -5%, rgba(255, 255, 255, 0.11) 0%, transparent 100%);
+  box-shadow: inset 0 0px 10px 0px rgba(255, 255, 255, 0.14), inset 0px 5px 10px 0px rgba(255, 255, 255, 0.11), inset 0px 2px 5px 0px rgba(255, 255, 255, 0.4), inset 0px 3px 20px 0px rgba(0, 0, 0, 0.25);
 }
-a:hover{
-  color: var(--glow-color)
+
+.button-41:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+p{
+  color:#ece9fe;
+}
+.button-41:active {
+  transform: scale(.95);
+}
+.about{
+  color: var(--glow-color);
+  text-shadow: 0 0 1px aliceblue;
+  font-weight: 600;
+  font-size: 40px;
+  bottom: 30px;
+}
+.aboutt{
+  color: var(--glow-color);
+  text-shadow: 0 0 8px aliceblue;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  bottom: 14px;
+}
+.about-us-container {
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 12px;
+  background-color: #0b03236c;
+  padding: 30px;
+  box-shadow: rgba(6, 6, 37, 0.679) 0px 30px 60px -12px inset, rgba(17, 3, 42, 0.564) 0px 18px 36px -18px inset;
+  text-align: center;
+}
+
+.about-us-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px; /* Optional: Add a border-radius for a rounded image */
 }
   @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
   

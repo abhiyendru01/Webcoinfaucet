@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
 
 function App() {
   const [walletAddress, setWalletAddress] = useState("");
@@ -60,10 +62,25 @@ function App() {
       console.log("Please install MetaMask");
     }
   };
-  const boxClick = (boxNumber) => {
-    alert(`Box ${boxNumber} clicked!`);
-    
-  };
+  
+    const showSweetAlert = () => {
+      Swal.fire({
+        icon:"success",
+        title: "Sent Successfully!",
+        width: 400,
+        padding: "3em",
+        color: "aliceblue",
+        confirmButtonColor: "rgb(190, 144, 233)",
+        background: "#110927dc",
+        backdrop: `
+        #09090946
+         
+        `
+      });
+    };
+  
+    // Call the function when the component mounts
+   
   return (
     
     <div>
@@ -71,7 +88,8 @@ function App() {
       <nav className="navbar">
         <div className="container">
           <div className="navbar-brand">
-            <h1 className="navbar-item is-size-4">Webcoin Token(WCT)</h1>
+    
+            <h1 className="navbar-item is-size-4">Webcoin Faucet</h1>
           </div>
           
           <div id="navbarMenu" className="navbar-menu">
@@ -108,7 +126,7 @@ function App() {
                   />
                 </div>
                 <div className="column">
-                  <button className="button-40">
+                  <button className="button-40" onClick={showSweetAlert}>
                     GET TOKENS
                   </button>
                 </div>
@@ -127,6 +145,32 @@ function App() {
           </div>
         </div>
       </section>
+      <div className="about-us-container">
+      <h2 class="about">About Us</h2>
+      <p class="aboutt">
+      we are a new faucet blockchain service we are a test net token launching soon. we provide latest and exact crypto currency update and pricing .
+      </p>
+    </div>
+      <div className="containerr">
+      <div className="button-41" onClick={showSweetAlert}>
+        <a href="#">
+            <img src="src/images/github.svg" alt="" />
+            <p>Join Faucet</p></a>
+            </div>
+        <div className="button-41" onClick={showSweetAlert} >
+          <a href="">
+          <img src="./public/discord.png" alt="" />
+          <p>Claim 50 WCT</p>
+          </a>
+        </div>
+  
+        <div className="button-41" onClick={showSweetAlert}>
+          <a href="#">
+          <img src="src/images/twitter.svg" alt="" />
+          <p>Authorized Accounts</p></a>
+        </div>
+  
+      </div>
       
       <div className="containerr">
       <div className="boxx" >
@@ -219,5 +263,5 @@ function App() {
     </div>
   );
 }
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
 export default App;
