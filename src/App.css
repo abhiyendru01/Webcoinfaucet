@@ -289,6 +289,7 @@ body {
   touch-action: manipulation;
 }
 .button-85:hover{
+  color: var(--glow-color);
   background-color: #22124f;
 }
 .button-85:before {
@@ -341,6 +342,12 @@ body {
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+a{
+  color: #c5b2f9;
+}
+a:hover{
+  color: var(--glow-color)
 }
   @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
   

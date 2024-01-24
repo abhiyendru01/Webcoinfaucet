@@ -121,7 +121,8 @@ function App() {
                 
               </article>
               </div>
-              <button class="button-85">Market Cap</button>
+              <a href="https://cluelesscodersmarketcap.netlify.app">
+              <button class="button-85">Market Cap</button></a>
             
           </div>
         </div>
@@ -142,7 +143,7 @@ function App() {
   
         <div className="boxx" >
           <a href="#">
-          <img src="src/images/twitter.svg" alt=""  className="image-overlay"/>
+          <img src="src/images/twitter.svg" alt="" />
           <p>Twitter</p></a>
         </div>
   
