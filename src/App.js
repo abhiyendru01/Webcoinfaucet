@@ -88,7 +88,6 @@ function App() {
       <nav className="navbar">
         <div className="container">
           <div className="navbar-brand">
-    
             <h1 className="navbar-item is-size-4">Webcoin Faucet</h1>
           </div>
           
@@ -251,7 +250,7 @@ function App() {
             </div>
 
             <div className="mb-[20px] text-[15px] text-center">
-                &copy; Webcoin Token 2024 Inc. All rights reserved
+                &copy; Webcoin Faucet 2024 Inc. All rights reserved
                 
             </div>
             <div className="mb-[20px] text-[15px] text-center">
